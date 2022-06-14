@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* h1{
+            margin-left: 600px;
+        } */
+        html{
+            font-size: 70%;
+        }
+        h1::after{
+            position: absolute;
+            width: 127rem;
+            height: 1px;
+            content: " ";
+            display: block;
+            background-color: black;
+        }
+        .container{
+            width: 100%;
+            height: 94.2vh;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border: 2px solid black;
+            text-align: center;
+            padding-top: 3rem;
+            font-size: 2.5rem;
+        }
+        .one{
+            background-color: red;
+            left: 60px;
+        }
+        .two{
+            background-color: lime;
+            left: 170px;
+        }
+        .three{
+            background-color: blue;
+            left: 280px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>
+        Drag boxes: X-axis=<span class ="xaxis"></span> Y-axis=<span class="yaxis"></span>
+    </h1> -->
+    <section class="container">
+        <div class="box-container">
+            <div class="box one">RINGA</div>
+            <div class="box two">RINGA</div>
+            <div class="box three">ROSES</div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        let containerBox = document.querySelector(".container");
+        let xPos = document.querySelector(".xaxis");
+        let yPos = document.querySelector(".yaxis");
+        let boxElement = document.querySelectorAll(".box");
+
+        let Xpos, Ypos;
+        let select = 0;
+        containerBox.addEventListener("mousemove", function(event){
+            Xpos = event.clientX;
+            Ypos = event.clientY;
+            xPos.textContent = Xpos;
+            yPos.textContent = Ypos;
+        });
+        let move = function (){
+            boxElement[select].style.left = `${Xpos}px`;
+            boxElement[select].style.top = `${Ypos}px`;
+        };
+        for (let i=0; i<3; i++){
+            boxElement[i].addEventListener("mousedown", function (){
+                select = i;
+                containerBox.addEventListener("mousemove", move);
+                boxElement[select].addEventListener("mouseup", function (){
+                    containerBox.removeEventListener("mousemove", move);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
