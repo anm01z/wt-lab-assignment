@@ -1,5 +1,5 @@
-##Date-of-Assignment: June 19,2020
-##Date of Submission: June 20,2020
+<h1>Date-of-Assignment: June 19,2020</h1>
+Date of Submission: June 20,2020
 #Terminology:
 #PHP:
 PHP is a general-purpose scripting language geared toward web development.It is known as a general-purpose scripting language that can be used to develop dynamic and >interactive websites. It was among the first server-side languages that could be embedded into HTML, making it easier to add functionality to web pages without needing >to call external files for data.
