@@ -1,0 +1,54 @@
+html{
+    margin: 0;
+    padding: 0;
+  } 
+  body{
+    background-color: rgb(14, 15, 16); 
+    min-width: 800px; 
+    margin: 0 auto;
+  }
+  header{
+    display:flex;
+    flex-flow:row wrap;
+    margin-bottom: 30px;
+  }
+  ol li{
+    font-size: 4rem;
+    /* line-height: 1.5; */
+    font-family: "Roboto Condensed", sans-serif;
+    color: Black;
+    margin-right: 150px;
+  }
+  nav{
+    background-color: blue;
+    padding: 1%;
+    height: 80px;
+    flex: 100%;
+    display: flex;
+    
+  }
+  
+  nav ol{ 
+    list-style-type: none;
+    display: flex;
+    margin:auto;
+  }
+  h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color:purple;
+    flex: 5;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 40%;
+  }
+  video{
+    margin-left: 120px;
+    width: 80rem;
+    height: 80rem;
+    border-radius: 40%;
+  }
