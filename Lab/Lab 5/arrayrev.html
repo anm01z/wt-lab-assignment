@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Reverse array</title>
+</head>
+<body>
+    <h1>The reverse is = <span id="array"></span></h1>
+    <script type="text/javascript">
+        const arr = prompt("Enter array of number: ");
+        let temp = [];
+        let s = 0;
+        for(let i = arr.length - 1; i>=0; i--){
+            if(arr[i] !== " "){
+                temp[s] = arr[i];
+                s++;
+            }
+        }
+        document.querySelector("#array").textContent = temp;
+    </script>
+</body>
+</html>

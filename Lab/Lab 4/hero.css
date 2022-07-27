@@ -1,0 +1,102 @@
+.third{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: inline-block;
+}
+header{
+    position: relative;
+}
+header a{
+    font-size: x-large;
+    width: auto;
+    margin: 12px;
+    padding: 12px;
+}
+.Brand{
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    font-size: 50px;
+    font-weight: 900;
+}
+nav li{
+    display: inline-block;
+    text-align: center;
+}
+.button{
+    text-decoration: none;
+}
+.list{
+    margin-left: 350px; 
+    position: absolute;
+    height: 0;
+    left: 50px;
+    font-weight:500;
+    top: 15px;
+}
+.contact_btn{
+    position: absolute;
+    right: 95px;
+    top: 1px;
+    border:solid  1px lightgray;
+    border-radius: 5px;
+    color: black;
+}
+.body{
+    position: absolute;
+    left: 100px;
+    top: 130px;
+    margin: auto;
+    height: 420px;
+    width: 640px;
+}
+#title{
+    font-size: 60px;
+}
+.align{
+    position: relative;
+    margin-bottom: 1.1rem;
+}
+.tick{
+    width: 1.9rem;
+    height: 1.7rem;
+    filter: invert(40%) sepia(80%) saturate(2520%) hue-rotate(200deg) brightness(95%) contrast(95%);
+}
+p{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    position: relative;
+    display: inline;
+    color: black;
+}
+.picture{
+    position: absolute;
+    left: 650px;
+    top: 50px;
+}
+img{
+    width: 700px;
+    height: 500px;
+    border-radius: 7px;
+}
+.email{
+    border: solid 1px lightgray;
+    padding: 20px 250px 20px 40px;
+    width: 180px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 15px;
+    left: 1rem;
+}
+.join{
+    position: absolute;
+    border-radius: 7px;
+    background-color: #3B82F6;
+    color: #EEEFF2;
+    left: 375px;
+    bottom: -1.4rem;
+    padding:15px 20px 15px 20px;
+    text-decoration: none;
+    font-style: bold;
+}

@@ -1,0 +1,87 @@
+html{
+    background-color: whitesmoke;
+}
+.fourth{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+header{
+    border-bottom: 1px solid;
+    padding-bottom: 50px;
+}
+.lpic{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.ltext{
+    font-size: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    left: 70px;
+    font-weight: 900;
+}
+.btn{
+    position:absolute;
+    top: 20px;
+    left: 210px;
+    font-size: 20px;
+}
+.button{
+    color: slategrey;
+}
+.button:hover{
+    color: black;
+    border-bottom: blue solid;
+    padding-bottom: 15px ;
+}
+a{
+    text-decoration: none;
+    margin-left: 40px;
+}
+.search_bar{
+    position: absolute;
+    top:10px;
+    right: 150px;
+    border: solid 1px #A5A9B2 ;
+    border-radius: 5px;
+}
+input{
+    border: none;
+    border-radius: 7px;
+    height: 15px;
+    width: 300px;
+    padding: 10px 10px 10px 40px;
+    font-size: 17px;
+}
+.search_glass{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -9px;
+    right: 285px;
+    color: #C6CAD1;
+    filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(219deg) brightness(99%)
+      contrast(89%);
+}
+.bell{
+    height: 24px;
+    width: 28px;
+    position: absolute;
+    top: -9px;
+    right: -100px;
+    color: #C6CAD1;
+    filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(219deg) brightness(99%)
+      contrast(89%);
+}
+img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 29px;
+    top: 13px;
+    border-radius: 50%;
+}

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&family=Patrick+Hand&family=Kdam+Thmor+Pro&family=Montserrat&family=Roboto:ital,wght@0,300;0,900;1,300&family=Ubuntu:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Kdam+Thmor+Pro&family=Montserrat&family=Patrick+Hand&family=Permanent+Marker&family=Roboto:ital,wght@0,300;0,900;1,300&family=Shadows+Into+Light&family=Ubuntu:wght@300&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
+}
+body{
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+/* nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 0 10px 0 white;
+    height: 15%;
+    background-color: black;
+    z-index: 5;
+}
+nav ul {
+    margin-left: 10rem;
+    margin-top: -5rem;
+    text-align: left;
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 7rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+nav a {
+    color: rgb(38, 70, 8);
+}
+nav ul li:hover a{
+    color: white;
+}
+.logo {
+    margin-top: 0rem;
+    width: 10rem;
+    height: 6.76rem;
+} */
+
+.side{
+    display: flex;
+    position: relative;
+}
+.side .bar{
+    position: fixed;
+    width: 10rem;
+    height: 100%;
+    background: black;
+    padding: 30px 0;
+    z-index: 5;
+}
+.side .bar img{
+    margin-top: 0rem;
+    width: 10rem;
+    height: 7rem;
+}
+.side .bar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.685);
+}
+.side .bar ul li{
+    color: white;
+    display: block;
+    font-size: 2rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.side .bar ul li:hover{
+    background-color: white;
+}
+.side .bar ul li:hover a{
+    color: darkgreen;
+}
+
+/* Home */
+.cadet {
+    position: relative;
+    margin-top: 0rem;
+}
+.cadet img{
+    height: 45rem;
+    width: 100%;
+}
+.name{
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 7rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.im{
+    color: white;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: -3rem;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* About */
+.about{
+    position: relative;
+    padding-top: 6rem;
+    height: 90vh;
+}
+h3{
+    text-align: left;
+    margin-left: 15rem;
+    font-size: 3rem;
+    color: skyblue;
+    text-decoration: underline;
+}
+h4{
+    margin-top: -0rem;
+    text-align: left;
+    margin-left: 15rem;
+    font-size: 2.5rem;
+    color: skyblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 60%;
+}
+.me{
+    margin-top: -40rem;
+    margin-left: 67rem;
+    height: 50vh;
+    width: 25%;
+    border-radius: 20rem;
+}
+
+/* Contact */
+.contact{
+    position: relative;
+    padding-top: 6rem;
+    height: 90vh;
+}
+h5{
+    text-align: left;
+    margin-left: 15rem;
+    font-size: 3rem;
+    color: skyblue;
+    text-decoration: underline;
+}
+h6{
+    margin-top: -0rem;
+    text-align: left;
+    margin-left: 15rem;
+    font-size: 2.5rem;
+    color: skyblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 60%;
+}
+.fb{ 
+    text-align: left;
+    margin-left: 45rem;
+    font-size: 3rem;
+    color: skyblue;
+    text-decoration: underline;
+}
+.ig{
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: skyblue;
+    text-decoration: underline;
+}

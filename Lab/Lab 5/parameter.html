@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Parameter</title>
+</head>
+<body>
+    <h1>What do you want?</h1>
+    <button class="asc">Ascending</button>
+    <button class="dsc" style="margin-bottom: 25px">Descending</button>
+    <br/>Result: <span id="sort"></span>
+
+    <script type="text/javascript">
+        // ascending //
+        let arr = [4, 5, 3, 2, 1];
+        let num;
+        document.querySelector(".asc").addEventListener("click", function(){
+            let arr = [77, 45, 5, 23, 3, 1];
+            for(let i = 0; i<arr.length - 1; i++){
+                for(let j = i+1; j<arr.length; j++){
+                    if(arr[i] > arr[j]){
+                        num = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = num;
+                    }
+                }
+            }
+            document.querySelector("#sort").textContent = arr;
+        });
+        // descending //
+        document.querySelector(".dsc").addEventListener("click", function(){
+            let arr = [77, 45, 5, 23, 3, 1];
+            for(let i = 0; i<arr.length - 1; i++){
+                for(let j = i+1; j<arr.length; j++){
+                    if(arr[i] < arr[j]){
+                        num = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = num;
+                    }
+                }
+            }
+            document.querySelector("#sort").textContent = arr;
+        });
+    </script>
+</body>
+</html>
